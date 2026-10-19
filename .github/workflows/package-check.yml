@@ -9,7 +9,9 @@ on:
         type: string
 
 permissions:
-  contents: read
+  # Reading an unpublished draft release requires push-equivalent access.
+  # The token is removed from the environment before the application executes.
+  contents: write
 
 jobs:
   package-check:
@@ -87,4 +89,5 @@ jobs:
           if (-not $report.passed -or -not $report.frozen -or $report.version -ne $manifest.version) { throw 'Invalid package-check result' }
           if (@($report.checks.PSObject.Properties | Where-Object { $_.Value -ne $true }).Count) { throw 'An offline check did not pass' }
           Write-Output "Verified ZIP SHA-256: $digest"
+          Write-Output "Verified release ID: $env:RELEASE_ID"
           $report | ConvertTo-Json -Depth 5
