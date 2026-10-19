@@ -1,44 +1,59 @@
-# Release Status
+# Preview Release Status
 
-The first public Minecraft standalone preview is being prepared. This repository
-currently distributes documentation, not an application. There is no stable
-release claim and no public binary has been certified for publication.
+AtlasWorlds Minecraft 0.1.0-preview.4 is an early Windows x64 desktop preview,
+not a stable release or security certification. The exact published ZIP, checksum,
+automated-check results, and known limitations are recorded in its release notes.
 
-## Before The First Download
+## Release Checks
 
-- Narrow the standalone package to its required components. The current local
-  preview still bundles unused hub/other-game framework modules; that package is
-  not the intended public release artifact.
-- Review the exact application payload for credentials, personal data, private
-  configuration, local server files, and unintended bundled assets or modules.
-- Review dependency and asset redistribution licenses and include their required
-  notices. The proprietary application terms do not replace third-party licenses.
-- Review the custom free-to-use license before distribution; it is not a claim
-  of professional legal review.
-- Test the complete packaged application on a clean Windows system without
-  developer Python, Java, PATH entries, caches, or an existing configuration.
-- Verify create/import, readiness, graceful shutdown, backup/restore, protected
-  pack update/rollback, mod changes, friends' ZIPs, and archive/removal workflows.
-- Test interrupted downloads, invalid archives, denied writes, low disk space,
-  insufficient memory, failed startup, and recovery after interruption.
-- Verify interface layout at supported display sizes and scaling.
-- Establish and test private vulnerability reporting and a repeatable release
-  validation process.
-- Record the version, known limitations, archive checksum, and exact artifact
-  tested. Upload deliberately through Releases, never from a development folder.
+The publishing process checks the following before making a download public:
+
+- Full-hub regression tests run separately against unchanged hub source. The
+  standalone is built from an isolated staging tree, not a live installation.
+- Minecraft backend and standalone interface tests run against that staged tree.
+- The frozen executable is inspected for excluded AzerothCore, WoW, Palworld,
+  database, and remote-agent backends. Unsupported integration boundaries fail
+  closed instead of loading another game's implementation.
+- Every packaged file is covered by a size/hash manifest. Private configuration,
+  known personal identifiers, server/world files, links, and proprietary plain-text
+  source are rejected. Unreviewed branding assets are not included.
+- Bundled dependency versions and license texts are inventoried. Exact unmodified
+  certifi source is provided separately under its own MPL terms; AtlasWorlds-owned
+  application source remains private. The custom application license is not a
+  claim of professional legal review.
+- Runtime downloads used for the build have recorded provenance. The build uses
+  a separate maintained Python environment instead of replacing the hub's Python.
+- An offline packaged-app check uses temporary data to exercise first run, setup
+  and import dialogs, unchecked consent, runtime imports, and game isolation.
+- The same ZIP is checked on an independent hosted Windows runner with Python
+  and Java removed from the application's PATH and no application data or library
+  installation copied from the developer's machine.
+- The download has a SHA-256 checksum and is uploaded as a GitHub prerelease.
+
+## Limits Of These Checks
+
+Automated fixture tests are not a real play session with every modpack. This
+packaging preview does not establish a comprehensive live-server acceptance matrix
+or guarantee recovery after every combination of filesystem, mod, and pack failure.
+Keep independent backups and verify your own server after importing or updating.
+
+The hosted check does not claim that the runner has no development tools installed;
+it removes them from the application's environment and installs no app dependencies.
+This checks application portability, not all Windows editions, display drivers,
+antivirus products, network environments, or modpack launchers.
+
+The executable is unsigned. Checksums are not digital signatures. Do not disable
+security software or bypass an untrusted-download warning to run an unknown copy.
+The source and dependency checks are not a professional penetration test or a
+guarantee that no undiscovered vulnerability exists.
 
 ## Distribution Boundaries
 
-Only reviewed documentation and issue templates belong in the public Git tree.
-Official packaged applications will be separate release assets. The source
-checkout, build history, private hub, other-game code, live configuration,
-credentials, servers, mods, worlds, and backups must not be copied into this
-repository.
+This repository contains documentation, issue templates, and release-check
+automation, not the proprietary application source or its development history.
+Packaged applications are separate release assets. No private hub installation,
+live configuration, credentials, game server, modpack, world, or backup is included.
 
 An application binary is not a confidentiality guarantee: packaged code may be
 inspectable or recoverable. Keeping source out of the repository is a distribution
 choice, not technical protection against reverse engineering.
-
-The first download will be marked as a preview with its tested scope and known
-limitations. A successful local test or a file-hash manifest alone is not a
-clean-machine acceptance test, digital signature, or guarantee against data loss.

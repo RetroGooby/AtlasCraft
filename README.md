@@ -4,9 +4,10 @@ A Windows desktop hub for Minecraft Java Edition servers. Import an existing
 server, create one from a server-pack ZIP, manage compatible mods, and update packs
 with backups and rollback protection.
 
-**Preparing the first public preview. No application download is published yet.**
-Downloads will appear under [Releases](https://github.com/RetroGooby/AtlasWorlds/releases)
-after packaging, privacy, licensing, and clean-machine checks are complete.
+**Minecraft standalone preview: 0.1.0-preview.4.**
+Get the Windows application ZIP from
+[Releases](https://github.com/RetroGooby/AtlasWorlds/releases).
+Read the release notes and [tested scope](docs/RELEASE_STATUS.md) before using it.
 
 This repository contains public documentation and issue tracking. AtlasWorlds is
 free to use, but its application source is proprietary and is not published here.

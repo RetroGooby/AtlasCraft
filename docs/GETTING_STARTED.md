@@ -1,11 +1,11 @@
 # Getting Started
 
-This guide describes the Minecraft standalone preview. The first public download
-is still being prepared; these are not instructions to build the private source.
+This guide describes the Minecraft standalone preview. The application source
+remains private; these are instructions for the packaged Windows application.
 
 ## Install The Application
 
-1. When available, download the Windows application ZIP from the official
+1. Download the Windows application ZIP from the official
    [Releases page](https://github.com/RetroGooby/AtlasWorlds/releases).
 2. Extract the entire `AtlasWorldsMinecraft` folder before running anything.
 3. Keep `AtlasWorldsMinecraft.exe` and `_internal` together, then open the executable.

@@ -3,13 +3,13 @@
 ## Reporting A Vulnerability
 
 Do not post exploit details, passwords, tokens, or private server files in a public
-issue. A tested private reporting channel is required before the first public
-application download. Its availability has not yet been confirmed.
+issue. Use GitHub's private reporting channel:
+[Report a vulnerability](https://github.com/RetroGooby/AtlasWorlds/security/advisories/new).
 
-If this repository offers **Security > Report a vulnerability**, use that private
-channel. Otherwise, open an issue asking the maintainer for a private contact
-route, without the vulnerability details or attachments. Do not guess an email
-address or send secrets to an unverified account.
+Private vulnerability reporting is enabled for this repository. If the form is
+unavailable, open an issue asking the maintainer for a private contact route,
+without vulnerability details or attachments. Do not guess an email address or
+send secrets to an unverified account.
 
 ## What Not To Upload
 
