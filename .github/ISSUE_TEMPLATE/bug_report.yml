@@ -1,0 +1,65 @@
+name: Bug report or unsupported pack
+description: Report a reproducible problem without sharing private server data.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please share only sanitized excerpts. Do not upload worlds, full configs,
+        passwords, API keys, DNS tokens, player details, or diagnostic ZIPs.
+        For vulnerabilities, read SECURITY.md instead of posting details here.
+  - type: input
+    id: app_version
+    attributes:
+      label: AtlasWorlds version
+      description: Include the exact preview or release version.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Windows version, Minecraft version, and loader
+      placeholder: Windows 11; Minecraft 1.20.1; Forge 47.x
+    validations:
+      required: true
+  - type: input
+    id: pack
+    attributes:
+      label: Pack name and version
+      description: A public pack-page link is helpful; do not upload the pack itself.
+  - type: dropdown
+    id: operation
+    attributes:
+      label: Where did the problem happen?
+      options:
+        - Creating a server from ZIP
+        - Importing an existing server
+        - Starting or stopping
+        - Pack update or rollback
+        - Mods or friends ZIP
+        - Backups or world archive
+        - Players or settings
+        - Joining or networking
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What did you do, what did you expect, and what actually happened?
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Sanitized error excerpt
+      description: Paste only the relevant lines after reviewing them for private data.
+      render: text
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I reviewed this report and attachments for credentials and personal data.
+          required: true

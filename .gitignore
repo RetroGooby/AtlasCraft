@@ -1,0 +1,15 @@
+# This public repository is documentation-only. Application ZIPs belong in Releases.
+# This allowlist is a convenience, not a secret scanner or a history-cleaning tool.
+*
+!/.gitignore
+!/README.md
+!/LICENSE.txt
+!/SECURITY.md
+!/docs/
+!/docs/GETTING_STARTED.md
+!/docs/RELEASE_STATUS.md
+!/.github/
+!/.github/ISSUE_TEMPLATE/
+!/.github/ISSUE_TEMPLATE/bug_report.yml
+!/.github/ISSUE_TEMPLATE/feature_request.yml
+!/.github/ISSUE_TEMPLATE/config.yml

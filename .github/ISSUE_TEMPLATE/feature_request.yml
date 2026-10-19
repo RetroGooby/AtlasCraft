@@ -1,0 +1,21 @@
+name: Feature request
+description: Suggest an improvement to the Minecraft standalone.
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the workflow and who would benefit.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+      description: Include alternatives or limitations that matter to you.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: Please do not include account credentials, personal server files, or private logs.

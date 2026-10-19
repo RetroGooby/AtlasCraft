@@ -1,0 +1,49 @@
+AtlasWorlds Free-to-Use Proprietary License
+Copyright (c) 2026 RetroGooby. All rights reserved except as granted below.
+
+1. Scope
+
+These terms apply only to original AtlasWorlds application code, documentation,
+and assets owned by RetroGooby. The application source code is not offered under
+an open-source license or published in this repository.
+
+2. Free use
+
+You may download, install, run, and make personal backup copies of official,
+unmodified AtlasWorlds releases free of charge, including to administer your own
+or your community's servers. You may read and retain this documentation to use
+the application. Donations are optional and are not required for any feature.
+
+3. Reserved rights
+
+No permission is granted to modify, sell, sublicense, or redistribute the
+AtlasWorlds-owned application or its source code without separate written
+permission from RetroGooby, except where applicable law requires otherwise.
+Sharing links to the official repository and downloads is welcome. Rights
+provided by GitHub's terms for viewing and forking this public documentation
+repository are not restricted by this notice.
+
+4. Third-party components and user content
+
+Third-party libraries, assets, runtimes, games, and mods remain subject to their
+own licenses and terms. This license does not replace or restrict rights those
+licenses grant, including any applicable modification, redistribution, or
+source-access rights. Required third-party notices must accompany releases.
+
+You retain your rights in your own worlds, server configuration, and other
+content. This license grants no rights in Minecraft or third-party modpacks.
+
+5. No warranty
+
+To the extent permitted by applicable law, the software and documentation are
+provided "AS IS", without warranties of any kind, express or implied, including
+merchantability, fitness for a particular purpose, or noninfringement.
+Backups and compatibility checks are not guarantees against data loss or failure.
+
+6. Limitation of liability
+
+To the extent permitted by applicable law, the copyright holder is not liable
+for damages or losses arising from use of or inability to use the software,
+including lost worlds, data, revenue, or server availability. These terms do not
+exclude liability or statutory rights that applicable law does not allow to be
+excluded.
