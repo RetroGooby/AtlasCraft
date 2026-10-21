@@ -1,10 +1,10 @@
 # AtlasWorlds
 
 A Windows desktop hub for Minecraft Java Edition servers. Import an existing
-server, create one from a server-pack ZIP, manage compatible mods, and update packs
+server, create one from a server-pack ZIP or dedicated server JAR, manage compatible mods, and update packs
 with backups and rollback protection.
 
-**Minecraft standalone preview: 0.1.0-preview.4.**
+**Minecraft standalone preview: 0.1.0-preview.9.**
 Get the Windows application ZIP from
 [Releases](https://github.com/RetroGooby/AtlasWorlds/releases).
 Read the release notes and [tested scope](docs/RELEASE_STATUS.md) before using it.
@@ -16,6 +16,8 @@ free to use, but its application source is proprietary and is not published here
 
 - **Create from ZIP:** inspect a dedicated server pack, detect supported Minecraft,
   loader, and Java requirements, then prepare and start a separate server folder.
+- **Create from JAR:** inspect a dedicated server JAR, detect supported Java
+  requirements, and copy it into a new isolated server folder.
 - **Import without recreating:** register a stopped existing server in place,
   preserving its worlds, settings, mods, and launch files.
 - **Manage mods:** scan installed JARs, search Modrinth or CurseForge, inspect
@@ -27,9 +29,13 @@ free to use, but its application source is proprietary and is not published here
   a rollback path.
 - **Run your server:** start and stop, view logs, copy join addresses, manage
   backups, and configure optional maintenance schedules.
+- **Run multiple servers:** use Running Servers for independent controls and
+  separate logs, with memory, port, and folder checks before starting.
 - **Manage players and gameplay:** use supported local RCON controls for player
   lists, OP status, kicks, bans, whitelist actions, and live settings. Other
   settings, including global PvP, require a clean stop and restart.
+- **Save server settings:** back up and verify supported settings changes, with
+  a confirmed clean stop and restart of only the selected controlled server.
 - **Keep a world archive:** archive a server before removing its registration.
   Imported server folders are not deleted by the removal workflow.
 
@@ -44,7 +50,7 @@ imported explicitly; this edition does not manage World of Warcraft or other gam
 
 ## Requirements And Limits
 
-- **Platform:** Windows desktop; the planned first package is Windows x64.
+- **Platform:** Windows x64 desktop.
 - **Resources:** enough available memory and disk space for your chosen pack,
   Windows, backups, and any client or other servers running on the same computer.
 - **Internet:** required for runtime/loader downloads and online mod searches.

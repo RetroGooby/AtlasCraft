@@ -16,10 +16,19 @@ Do not disable security software or bypass an unknown download warning. Verify
 the download's origin before proceeding. A checksum verifies file integrity; it
 is not a digital signature or a safety certification.
 
+### Upgrade An Existing Standalone
+
+Stop controlled servers cleanly and close the old standalone before opening the
+new version. Extract the new download into a separate folder rather than merging
+it into the old application. On the same Windows account, the default application
+data and registered server folders are reused; worlds are not recreated. Keep
+independent backups of application data and servers before upgrading. Do not run
+both application versions against the same server folders.
+
 ## Create From A Server-Pack ZIP
 
 1. Download a trusted, dedicated **server pack**, not a client modpack export.
-2. Choose **New Server...**, select the ZIP, and enter a server name and parent folder.
+2. Choose **New Server...**, select **Server pack ZIP**, and enter a server name and parent folder.
 3. Choose a heap limit that leaves enough memory for Windows and other applications.
 4. Wait for **Check Compatibility** and review the detected Minecraft version,
    loader, Java requirement, and any warnings. Resolve unsupported or ambiguous
@@ -33,6 +42,24 @@ is not a digital signature or a safety certification.
 
 No compatibility checker can prove that a pack is safe or that all its mods work
 together. Unknown installers and unsupported layouts fail instead of being run blindly.
+
+## Create From A Server JAR
+
+1. Download a trusted dedicated Java Edition server JAR, such as the vanilla server
+   from [Minecraft's official server page](https://www.minecraft.net/en-us/download/server).
+2. Choose **New Server...**, select **Server JAR**, and browse to the downloaded file.
+3. Enter a server name, destination parent folder, and maximum memory limit.
+4. Review the automatic compatibility check. Embedded release metadata identifies
+   Minecraft and Java; older JARs without metadata may need a version or Java
+   override under **Advanced**.
+5. Read and accept the EULA only if you agree, separately confirm trust, then
+   choose **Create & Start**. Java is reused or downloaded as needed.
+
+The JAR is copied into a fresh server folder; the downloaded original is unchanged.
+Client JARs, individual mods, loader installers, unsupported launchers, and JARs
+missing companion files are rejected. Use a complete server-pack ZIP for modpacks.
+JAR inspection is limited to 256 MiB. An offline check does not guarantee a
+successful first boot or verify external downloads made by a third-party server.
 
 ## Import Without Recreating A Server
 
@@ -101,6 +128,18 @@ Preserving a configuration file does not make an author's breaking changes
 compatible. Added mods may also need updates. Keep independent backups outside
 the application's retention-managed backup folder.
 
+## Running Multiple Servers
+
+Use **Running Servers** for per-server status, controls, resource information,
+and separate server logs. Starting another server checks memory headroom, port
+conflicts, and overlapping folders. Leave room for Windows, clients, and startup
+overhead; a heap limit is not the process's total memory usage.
+
+Only dashboard-owned servers are controlled. An externally started process is
+not automatically adopted or terminated. Starting or stopping one server does not
+stop the others, but startup and shutdown operations are serialized. Large packs
+may take several minutes to become ready.
+
 ## Players And Settings
 
 The **Players** and **Live Settings** tabs require configured local RCON and a
@@ -108,9 +147,14 @@ verified ready server. Administrative actions require confirmation. Unsupported
 commands stay disabled; commands are not automatically retried after a timeout.
 Refresh the state before deciding whether to retry a command yourself.
 
-Use **Settings** while stopped for supported `server.properties` changes. Global
-PvP changes require a restart. Scheduled actions run while AtlasWorlds is open;
-the preview is not a Windows service.
+Use **Settings** for supported `server.properties` changes. **Back Up & Save
+Settings** offers to stop, back up the settings, save, and restart only the selected
+dashboard-controlled running server. Other servers keep running; a stopped server
+stays stopped. Failed stops or saves preserve the draft, and successful saves
+clear its unsaved-change warning. Servers started outside this dashboard must be
+stopped there first. The settings backup covers `server.properties`, not the entire
+server or world. Global PvP changes require a restart. Scheduled actions run while
+AtlasWorlds is open; the preview is not a Windows service.
 
 ## Data And Recovery
 

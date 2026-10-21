@@ -1,6 +1,6 @@
 # Preview Release Status
 
-AtlasWorlds Minecraft 0.1.0-preview.4 is an early Windows x64 desktop preview,
+AtlasWorlds Minecraft 0.1.0-preview.9 is an early Windows x64 desktop preview,
 not a stable release or security certification. The exact published ZIP, checksum,
 automated-check results, and known limitations are recorded in its release notes.
 
@@ -8,7 +8,7 @@ automated-check results, and known limitations are recorded in its release notes
 
 The publishing process checks the following before making a download public:
 
-- Full-hub regression tests run separately against unchanged hub source. The
+- Full-hub regression tests run separately against shared development source. The
   standalone is built from an isolated staging tree, not a live installation.
 - Minecraft backend and standalone interface tests run against that staged tree.
 - The frozen executable is inspected for excluded AzerothCore, WoW, Palworld,
@@ -24,13 +24,25 @@ The publishing process checks the following before making a download public:
 - Runtime downloads used for the build have recorded provenance. The build uses
   a separate maintained Python environment instead of replacing the hub's Python.
 - An offline packaged-app check uses temporary data to exercise first run, setup
-  and import dialogs, unchecked consent, runtime imports, and game isolation.
+  and import dialogs, ZIP/JAR choices, unchecked consent, verified settings saves,
+  profile isolation, runtime imports, and game isolation. No game server is started.
 - The same ZIP is checked on an independent hosted Windows runner with Python
   and Java removed from the application's PATH and no application data or library
   installation copied from the developer's machine.
 - The download has a SHA-256 checksum and is uploaded as a GitHub prerelease.
 
 ## Limits Of These Checks
+
+For preview9, the full regression suite ran 543 tests and the staged Minecraft
+suite ran 373 tests, with no failures or errors and one skipped test in each.
+Targeted tests cover backed-up settings changes, independent server controls,
+draft preservation, and safely reusing a removed managed server's folder while
+keeping its verified world archive. Active duplicate and other-game roots remain
+protected. The release-validation asset records exact package and hosted results.
+
+Concurrent-control tests used isolated protocol/console stub servers, not two
+real modpack play sessions. The vanilla 1.21.1 JAR inspection used an official
+download with verified metadata; that JAR was not executed for the release check.
 
 Automated fixture tests are not a real play session with every modpack. This
 packaging preview does not establish a comprehensive live-server acceptance matrix
