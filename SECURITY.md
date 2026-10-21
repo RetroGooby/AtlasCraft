@@ -4,7 +4,7 @@
 
 Do not post exploit details, passwords, tokens, or private server files in a public
 issue. Use GitHub's private reporting channel:
-[Report a vulnerability](https://github.com/RetroGooby/AtlasWorlds/security/advisories/new).
+[Report a vulnerability](https://github.com/RetroGooby/AtlasCraft/security/advisories/new).
 
 Private vulnerability reporting is enabled for this repository. If the form is
 unavailable, open an issue asking the maintainer for a private contact route,

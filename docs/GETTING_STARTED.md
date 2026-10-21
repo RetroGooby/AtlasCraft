@@ -1,12 +1,14 @@
 # Getting Started
 
-This guide describes the Minecraft standalone preview. The application source
-remains private; these are instructions for the packaged Windows application.
+This guide describes AtlasCraft, formerly AtlasWorlds Minecraft. The application
+source remains private; these are instructions for the packaged Windows application.
+The current preview retains its `AtlasWorldsMinecraft` executable and data-folder
+names. Leave those paths unchanged when upgrading.
 
 ## Install The Application
 
 1. Download the Windows application ZIP from the official
-   [Releases page](https://github.com/RetroGooby/AtlasWorlds/releases).
+   [Releases page](https://github.com/RetroGooby/AtlasCraft/releases).
 2. Extract the entire `AtlasWorldsMinecraft` folder before running anything.
 3. Keep `AtlasWorldsMinecraft.exe` and `_internal` together, then open the executable.
 4. Expect an empty server library on first run. Existing hub servers are not
@@ -167,5 +169,5 @@ registry, server folders, and backups safe. Do not delete retained transaction o
 rollback folders merely to bypass a recovery warning.
 
 For help, include versions, steps, and a sanitized log excerpt in an
-[issue](https://github.com/RetroGooby/AtlasWorlds/issues). See [SECURITY.md](../SECURITY.md)
+[issue](https://github.com/RetroGooby/AtlasCraft/issues). See [SECURITY.md](../SECURITY.md)
 before uploading any files.

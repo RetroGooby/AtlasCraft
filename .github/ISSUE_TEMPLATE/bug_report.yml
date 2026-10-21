@@ -11,7 +11,7 @@ body:
   - type: input
     id: app_version
     attributes:
-      label: AtlasWorlds version
+      label: AtlasCraft version (formerly AtlasWorlds Minecraft)
       description: Include the exact preview or release version.
     validations:
       required: true
@@ -33,6 +33,7 @@ body:
       label: Where did the problem happen?
       options:
         - Creating a server from ZIP
+        - Creating a server from JAR
         - Importing an existing server
         - Starting or stopping
         - Pack update or rollback

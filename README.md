@@ -1,16 +1,24 @@
-# AtlasWorlds
+# AtlasCraft
 
-A Windows desktop hub for Minecraft Java Edition servers. Import an existing
+A Windows desktop hub for Minecraft Java Edition servers. Formerly named
+**AtlasWorlds Minecraft**, AtlasCraft lets you import an existing
 server, create one from a server-pack ZIP or dedicated server JAR, manage compatible mods, and update packs
 with backups and rollback protection.
 
 **Minecraft standalone preview: 0.1.0-preview.9.**
 Get the Windows application ZIP from
-[Releases](https://github.com/RetroGooby/AtlasWorlds/releases).
+[Releases](https://github.com/RetroGooby/AtlasCraft/releases).
 Read the release notes and [tested scope](docs/RELEASE_STATUS.md) before using it.
 
-This repository contains public documentation and issue tracking. AtlasWorlds is
+This repository contains public documentation and issue tracking. AtlasCraft is
 free to use, but its application source is proprietary and is not published here.
+
+**Naming transition:** the current preview download is still named
+`AtlasWorldsMinecraft`, including its executable, window title, license, and data
+folders. These names are retained for compatibility; do not rename your data
+folders or recreate servers. Older bundled guides may link to the former
+repository address; use the links in this repository instead. **AtlasWorlds** is
+now the separate multi-game server hub, whose repository remains private.
 
 ## What It Does
 
@@ -70,7 +78,7 @@ of mods is compatible. See [release status](docs/RELEASE_STATUS.md).
 
 ## Help And Feedback
 
-Use [Issues](https://github.com/RetroGooby/AtlasWorlds/issues) for reproducible bugs,
+Use [Issues](https://github.com/RetroGooby/AtlasCraft/issues) for reproducible bugs,
 unsupported pack layouts, and feature suggestions. Include the application,
 Minecraft, loader, and pack versions, plus a short sanitized log excerpt.
 
@@ -80,10 +88,10 @@ player details, or unreviewed diagnostic archives.** Read the
 
 ## Support Development
 
-AtlasWorlds is free to use. Donations are entirely optional and do not unlock
+AtlasCraft is free to use. Donations are entirely optional and do not unlock
 features or provide a different application license.
 
-[Support AtlasWorlds on PayPal](https://www.paypal.com/donate/?hosted_button_id=8WCSEHZGTJGEQ)
+[Support AtlasCraft on PayPal](https://www.paypal.com/donate/?hosted_button_id=8WCSEHZGTJGEQ)
 
 ## License And Credits
 
@@ -91,7 +99,7 @@ Created by **RetroGooby**. See [LICENSE.txt](LICENSE.txt) for the free-to-use,
 proprietary application terms. Third-party components retain their own licenses;
 required notices must accompany the application download.
 
-AtlasWorlds is an independent community tool. It is not an official Minecraft
+AtlasCraft is an independent community tool. It is not an official Minecraft
 product and is not approved by or associated with Mojang or Microsoft. Game names
 and trademarks belong to their respective owners. No game, modpack, Java runtime,
 world, or account credential is distributed in this documentation repository.

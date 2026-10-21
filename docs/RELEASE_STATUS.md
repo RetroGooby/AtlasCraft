@@ -1,8 +1,14 @@
 # Preview Release Status
 
-AtlasWorlds Minecraft 0.1.0-preview.9 is an early Windows x64 desktop preview,
+AtlasCraft (formerly AtlasWorlds Minecraft) 0.1.0-preview.9 is an early Windows x64 desktop preview,
 not a stable release or security certification. The exact published ZIP, checksum,
 automated-check results, and known limitations are recorded in its release notes.
+
+The repository has been renamed to `RetroGooby/AtlasCraft`; the private multi-game
+hub now uses `RetroGooby/AtlasWorlds`. Previously verified preview ZIPs are unchanged,
+including their executable, legacy branding, bundled guides, and checksums. Use
+this repository's current guide and links rather than the old bundled GitHub URLs.
+No server data paths have been migrated or renamed.
 
 ## Release Checks
 
