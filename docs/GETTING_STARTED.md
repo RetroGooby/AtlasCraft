@@ -45,6 +45,11 @@ both application versions against the same server folders.
 No compatibility checker can prove that a pack is safe or that all its mods work
 together. Unknown installers and unsupported layouts fail instead of being run blindly.
 
+Newly created servers have Minecraft's whitelist disabled by default, including
+when the server pack ships with it enabled. You can enable it in **Settings** or
+through the supported live controls. Imports and pack updates preserve existing
+whitelist settings; creating a server does not disable Minecraft account authentication.
+
 ## Create From A Server JAR
 
 1. Download a trusted dedicated Java Edition server JAR, such as the vanilla server
@@ -141,6 +146,12 @@ Only dashboard-owned servers are controlled. An externally started process is
 not automatically adopted or terminated. Starting or stopping one server does not
 stop the others, but startup and shutdown operations are serialized. Large packs
 may take several minutes to become ready.
+
+New game ports are allocated from the lowest available port starting at `25565`;
+RCON setup starts at `25575`. Archived-and-removed registrations release their
+reservations, but retained servers keep theirs even while stopped or disabled.
+Other registered game/RCON endpoints and occupied IPv4/IPv6 TCP ports are skipped.
+Existing servers are not automatically renumbered, and router rules are not changed.
 
 ## Players And Settings
 

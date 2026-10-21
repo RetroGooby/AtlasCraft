@@ -1,6 +1,6 @@
 # Preview Release Status
 
-AtlasCraft (formerly AtlasWorlds Minecraft) 0.1.0-preview.9 is an early Windows x64 desktop preview,
+AtlasCraft (formerly AtlasWorlds Minecraft) 0.1.0-preview.10 is an early Windows x64 desktop preview,
 not a stable release or security certification. The exact published ZIP, checksum,
 automated-check results, and known limitations are recorded in its release notes.
 
@@ -39,12 +39,13 @@ The publishing process checks the following before making a download public:
 
 ## Limits Of These Checks
 
-For preview9, the full regression suite ran 543 tests and the staged Minecraft
-suite ran 373 tests, with no failures or errors and one skipped test in each.
 Targeted tests cover backed-up settings changes, independent server controls,
 draft preservation, and safely reusing a removed managed server's folder while
-keeping its verified world archive. Active duplicate and other-game roots remain
-protected. The release-validation asset records exact package and hosted results.
+keeping its verified world archive. Preview10 also exercises live RCON access for
+a recreated owner, reuse of archived game/RCON ports, IPv4/IPv6 collision checks,
+and whitelist-off creation defaults while preserving existing update settings.
+Active duplicate and other-game roots remain protected. The release-validation
+asset records exact regression counts and package/hosted results for each release.
 
 Concurrent-control tests used isolated protocol/console stub servers, not two
 real modpack play sessions. The vanilla 1.21.1 JAR inspection used an official

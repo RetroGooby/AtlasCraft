@@ -5,7 +5,7 @@ A Windows desktop hub for Minecraft Java Edition servers. Formerly named
 server, create one from a server-pack ZIP or dedicated server JAR, manage compatible mods, and update packs
 with backups and rollback protection.
 
-**Minecraft standalone preview: 0.1.0-preview.9.**
+**Minecraft standalone preview: 0.1.0-preview.10.**
 Get the Windows application ZIP from
 [Releases](https://github.com/RetroGooby/AtlasCraft/releases).
 Read the release notes and [tested scope](docs/RELEASE_STATUS.md) before using it.
@@ -39,6 +39,8 @@ now the separate multi-game server hub, whose repository remains private.
   backups, and configure optional maintenance schedules.
 - **Run multiple servers:** use Running Servers for independent controls and
   separate logs, with memory, port, and folder checks before starting.
+- **Reuse freed ports:** newly created servers reuse the lowest available port;
+  archived registrations no longer keep game/RCON ports reserved forever.
 - **Manage players and gameplay:** use supported local RCON controls for player
   lists, OP status, kicks, bans, whitelist actions, and live settings. Other
   settings, including global PvP, require a clean stop and restart.
